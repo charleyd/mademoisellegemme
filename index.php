@@ -13,7 +13,7 @@
     <div class="container_social">
         <ul>
             <li>contact@mademoisellegemme.fr</li>
-            <li>f</li>
+            <li>Coucou c'est Louison</li>
             <li>e</li>
             <li>i</li>
         </ul>
