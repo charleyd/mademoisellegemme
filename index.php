@@ -6,7 +6,7 @@
 <section class="home_hero">
 
     <div class="content">
-        <h1>Mademoiselle Gemme</h1>
+        <h1>Mademoiselle Gemme youpi</h1>
         <p>Collection de bijoux et d'histoires</p>
     </div>
             
