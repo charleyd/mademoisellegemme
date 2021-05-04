@@ -1,0 +1,268 @@
+.home_hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/imagebg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    width: 100%;
+    font-family: 'regis';
+    position: relative;
+
+    .content{
+        width: 50%;
+        margin: auto;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        
+        h1 {
+            text-align: center;
+            font-family: 'Spectral', serif;
+            font-size: 5em;
+            font-weight: 200;
+            overflow: hidden;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+
+            font-weight:200;
+            font-size: 1.5rem;
+            color: #eeeeee;
+        }
+    }
+
+    .container_social{
+        z-index: 1000;
+        position: absolute;
+
+        display: grid;
+        grid-template-columns: 4fr;
+        bottom: 40;
+        left: 40;
+        color: rgb(255, 255, 255);
+        width: 20vw;
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            font-size: 1em;
+            overflow: hidden;
+            
+            li {
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 300;
+                font-size: .8rem;
+                text-transform: uppercase;
+                margin: 2vh 0;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+    }
+}
+
+.home_categories {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .card_container{
+        border: 1px solid red;
+        display: flex;
+        margin: auto;
+
+        .card{
+            display: flex;
+            place-items: center;
+            height: 50vh;
+            width: 15vw;
+            margin: 2vw;
+            background: rgb(245, 244, 239);
+
+            h3 {
+                font-family: 'Petrona', serif;
+                text-align: center;
+                border: 1px solid red;
+                font-size: 1.5rem;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+.section_last_posts{
+    height: 100vh;
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 10vh auto 10vh;
+
+    .title {
+        grid-row: 1 /span 1;
+        grid-column: 1 /span 2;
+
+        h1{
+            font-family: 'Spectral', serif;
+            color: #464646;
+            font-weight: 300;
+            font-size: 3rem;
+            overflow: hidden;
+        }
+    }
+
+    .first_post{
+        grid-column: 1 /span 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2vw;
+        padding-right: 5vw;
+    }
+
+    .second_post{
+        grid-column: 2 /span 1;
+        display: flex;
+        flex-direction: column;
+        padding-right: 5vw;
+    }
+
+    .nav {
+        grid-column: 1 /span 2;
+        grid-row: 3 /span 1;
+        text-align: center;
+    }
+}
+
+.section_gembox{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    background-color: rgb(245, 239, 225);
+
+    .container_gembox{
+        height: 60vh;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        
+        background-image: url("../img/gembox_bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid blue;
+    }
+}
+
+.section_lexique{
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh auto;
+
+    .lexique_title{
+        grid-row: 1 /span 1;
+        grid-template-columns: 80vw auto;
+    }
+
+    .lexique_container{
+        grid-row: 2 /span 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .card{
+            grid-column: 1fr;
+            padding: 2vw;
+            border-right: 1px solid lightgrey;
+        }
+    }
+
+}
+
+.home_instafeed{
+    height: 40vh;
+    display: grid;
+    place-items: center;
+
+    
+}
+
+// global
+
+.post {
+    
+    h4 { //catégorie
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        font-size: .8rem;
+        text-transform: uppercase;
+        margin: 2vh 0;
+        letter-spacing: 0.1rem;
+    }
+
+    h1{ // titre article
+        font-family: 'Spectral', serif;
+        color: #464646;
+        font-weight: 200;
+        font-size: 2.5rem;
+        overflow: hidden;
+    }
+
+
+    p { // texte article
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin: 2vh 0;
+        color: #464646;
+        padding-right: 5vw;
+    }
+
+    img{
+        height: 50vh;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+.lexique {
+    
+    h4 { //catégorie
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        font-size: .8rem;
+        text-transform: uppercase;
+        margin: 2vh 0;
+        letter-spacing: 0.1rem;
+    }
+
+    h1{ // titre article
+        font-family: 'Spectral', serif;
+        color: #161616;
+        font-weight: 200;
+        font-size: 3rem;
+        overflow: hidden;
+    }
+
+
+    p { // texte article
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin: 2vh 0;
+        color: #464646;
+        padding-right: 5vw;
+    }
+
+}
